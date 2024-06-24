@@ -72,6 +72,7 @@ const userFunds = 5000000;
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/_breakpoints.scss";
 .dashboardUserBento {
     &__base {
         display: flex;

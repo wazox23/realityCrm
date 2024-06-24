@@ -67,6 +67,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/_breakpoints.scss";
+
 .dashboard {
     display: flex;
     flex-direction: column;
