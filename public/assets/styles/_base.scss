@@ -1,0 +1,54 @@
+@import './fonts';
+@import './buttons';
+
+* {
+    &,
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+    position: relative;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    background: $c-main-bg;
+    font-family: "Inter", sans-serif;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.main-container {
+    @include fluid('padding-left', 320px, 1440px, 16px, 160px);
+    @include fluid('padding-right', 320px, 1440px, 16px, 160px);
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.card {
+    padding: 32px;
+    border: 1px solid $c-slate;
+    border-radius: 32px;
+    background: $c-white;
+    box-shadow: $bs-header;
+
+    &--primary {
+        background: $c-primary;
+    }
+
+    &--secondary {
+        background: $c-secondary;
+    }
+}

@@ -1,0 +1,33 @@
+@import './colors';
+@import './variables';
+
+.btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: 1px solid $c-slate;
+    cursor: pointer;
+    background: $c-button;
+    font-weight: $f-weight-bold;
+    transition: background $d-short;
+
+    &:hover {
+        background: $c-slate;
+    }
+
+    &:focus-visible {
+        outline: 2px solid $c-default-focus;
+        outline-offset: 2px;
+    }
+
+    &--primary {
+        background: $c-primary;
+        color: $c-white;
+
+        &:hover {
+            background: $c-primary-hover;
+        }
+    }
+}

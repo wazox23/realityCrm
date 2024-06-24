@@ -1,0 +1,39 @@
+@import './breakpoints.scss';
+@import './variables.scss';
+
+.grid {
+    display: grid;
+    gap: 16px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    &--1-3 {
+        grid-template-areas: 
+        "small small large large large large";
+
+        .grid-item {
+            &:nth-child(1) {
+                grid-area: small;
+            }
+
+            &:nth-child(2) {
+                grid-area: large;
+            }
+        }
+    }
+
+    &--1-2 {
+        grid-template-areas: 
+        "one one one two two two";
+
+        .grid-item {
+            &:nth-child(1) {
+                grid-area: one;
+            }
+
+            &:nth-child(2) {
+                grid-area: two;
+            }
+        }
+    }
+}

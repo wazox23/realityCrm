@@ -1,0 +1,22 @@
+/* stylelint-disable function-no-unknown */
+@charset "UTF-8";
+@use 'sass:color';
+
+$c-black: #000;
+$c-white: #fff;
+
+$c-main-bg: #F9F9F9;
+
+$c-primary: #0C746D;
+$c-primary-hover: #095E58;
+
+$c-secondary: #FBCD6D;
+
+$c-button: #EEEEEE;
+
+$c-slate: #E0E0E0;
+
+$c-default-focus: #0096ff;
+
+$bs-header: 0 4px 9px 0 rgb(0 0 0 / 12%);
+$bs-header-light: 0 4px 9px 0 rgb(0 0 0 / 6%);
