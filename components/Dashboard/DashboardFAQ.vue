@@ -88,6 +88,7 @@ const faqItems = ref([
 </script>
 
 <style lang="scss" scoped>
+@import "@/assets/styles/colors.scss";
 .dashboardFAQ {
     &__base {
         display: flex;
