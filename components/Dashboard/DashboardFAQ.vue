@@ -88,7 +88,6 @@ const faqItems = ref([
 </script>
 
 <style lang="scss" scoped>
-@import "@/assets/styles/breakpoints.scss";
 .dashboardFAQ {
     &__base {
         display: flex;
